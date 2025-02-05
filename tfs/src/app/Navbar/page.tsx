@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
               WHO WE ARE
             </Link>
             <Link
-              href="/Skills"
+              href="/Services"
               className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition"
               aria-label="View Projects"
             >
@@ -101,7 +101,7 @@ const Navbar: React.FC = () => {
             WHO WE ARE
           </Link>
           <Link
-            href="/Skills"
+            href="/Services"
             className="block px-4 py-2 hover:bg-gray-100 text-sm font-medium transition"
             aria-label="View Projects"
           >

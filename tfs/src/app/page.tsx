@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen w-full">
       {/* Red background section */}
-      <div className="bg-red-900 py-12">
+      <div className="bg-red-900 z-10 py-12">
         <h1 className="text-2xl font-bold text-white animate-wave text-center">
           WE ARE TALENT FRONTIERS SOLUTIONS, A KENYAN-BASED EMPLOYMENT AGENCY DEDICATED TO CONNECTING PROFESSIONAL LOCAL TALENT WITH GLOBAL OPPORTUNITIES.
         </h1>

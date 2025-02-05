@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center justify-end ml-auto">
+          <div className="md:hidden flex items-center z-20 justify-end ml-auto">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-red-800 focus:outline-none"
@@ -92,7 +92,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-gray-50 w-fit ml-auto rounded-md shadow-md">
+        <div className="md:hidden bg-gray-50 w-fit ml-auto right-0  z-20 absolute top-24 rounded-md shadow-md">
           <Link
             href="/"
             className="block px-4 py-2 hover:bg-gray-100 text-sm font-medium transition"

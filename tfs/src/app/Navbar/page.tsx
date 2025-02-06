@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
               SERVICES
             </Link>
             <Link
-              href="/contact"
+              href="/Careers"
               className="hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition"
               aria-label="Contact Page"
             >
@@ -108,7 +108,7 @@ const Navbar: React.FC = () => {
             SERVICES
           </Link>
           <Link
-            href="/contact"
+            href="/Careers"
             className="block px-4 py-2 hover:bg-gray-100 text-sm font-medium transition"
             aria-label="Contact Page"
           >

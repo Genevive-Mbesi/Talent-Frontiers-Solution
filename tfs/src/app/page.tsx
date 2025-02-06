@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import cover from "@/app/components/Images/cover.jpg";
+import Services from "@/app/Services/page"
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       </div>
 
       {/* Cover image below the red background */}
-      <div className="relative min-h-screen">
+      <div className="relative w-full h-[600px] overflow-hidden">
         <Image
           src={cover}
           alt="Cover image"
@@ -24,7 +25,7 @@ export default function Home() {
           className="z-[-1]"
         />
       </div>
-      
+      <Services/>
     </div>
   );
 }

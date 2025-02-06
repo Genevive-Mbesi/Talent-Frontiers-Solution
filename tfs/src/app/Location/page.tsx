@@ -16,7 +16,7 @@ function Location() {
           <div className="p-6">
             <h2 className="text-2xl font-bold text-gray-900">Visit Us</h2>
             <p className="text-gray-600 mt-2">
-              Find us at our headquarters and get in touch with our team. We are
+              Find us at our office and get in touch with our team. We are
               happy to assist you!
             </p>
 

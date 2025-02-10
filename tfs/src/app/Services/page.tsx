@@ -7,6 +7,54 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
+// Service data for dynamic rendering
+const services = [
+  {
+    title: "Global Job Placement",
+    description:
+      "We connect skilled professionals with global employers, ensuring they secure well-matched roles.",
+    details:
+      "By matching talent with the right opportunities, we help professionals advance their careers while enabling businesses to access top expertise.",
+  },
+  {
+    title: "Interview Preparation",
+    description:
+      "We partner with recruiters to streamline hiring and provide tailored coaching for candidates.",
+    details:
+      "Beyond placements, we offer personalized coaching tailored to global hiring standards, boosting confidence and cultural awareness.",
+  },
+  {
+    title: "Visa Application",
+    description:
+      "We process visa applications and work permits, simplifying the process of legally working abroad.",
+    details:
+      "Our comprehensive support ensures successful candidates navigate visa and work permit processes smoothly for a hassle-free transition.",
+  },
+  {
+    title: "Relocation & Settlement Support",
+    description:
+      "From travel to accommodation, we help professionals settle into their new work environment overseas.",
+    details:
+      "We provide end-to-end relocation assistance, including flight bookings, visas, and housing arrangements, for a seamless transition.",
+  },
+];
+
+// Reusable Service Card Component
+const ServiceCard = ({ title, description, details }: { title: string; description: string; details: string }) => {
+  return (
+    <Card className="h-full flex flex-col bg-white shadow-xl rounded-2xl p-6">
+      <CardHeader>
+        <CardTitle>{title}</CardTitle>
+        <CardDescription className="text-red-800">{description}</CardDescription>
+      </CardHeader>
+      <CardContent className="text-xl flex-grow">
+        <p>{details}</p>
+      </CardContent>
+    </Card>
+  );
+};
+
+// Main Projects Component
 function Projects() {
   return (
     <>
@@ -17,86 +65,16 @@ function Projects() {
         </h1>
       </div>
 
-      {/* Grid Layout for Uniform Cards */}
+      {/* Grid Layout for Cards */}
       <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-        
-        {/* Global Job Placement */}
-        <Card className="h-full flex flex-col">
-          <CardHeader>
-            <CardTitle>Global Job Placement</CardTitle>
-            <CardDescription>
-              We connect skilled local professionals with international
-              employers, ensuring they secure well-matched roles in various
-              industries worldwide.
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="text-red-800 text-xl flex-grow">
-            <p>
-              By carefully matching talent with the right opportunities, we help
-              professionals advance their careers while enabling businesses to
-              access high-quality expertise. Our mission is to create
-              meaningful, mutually beneficial connections that drive global
-              career growth and business success.
-            </p>
-          </CardContent>
-        </Card>
-
-        {/* Interview Preparation */}
-        <Card className="h-full flex flex-col">
-          <CardHeader>
-            <CardTitle>Interview Preparation</CardTitle>
-            <CardDescription>
-              We partner with global recruiters and employers to streamline the
-              hiring process and provide tailored interview coaching to help
-              candidates excel in international job interviews.
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="text-red-800 text-xl flex-grow">
-            <p>
-              Beyond job placements, we provide personalized interview coaching
-              tailored to global hiring standards, equipping candidates with the
-              confidence, skills, and cultural awareness needed to excel in
-              international job interviews.
-            </p>
-          </CardContent>
-        </Card>
-
-        {/* Visa Application */}
-        <Card className="h-full flex flex-col">
-          <CardHeader>
-            <CardTitle>Visa Application</CardTitle>
-            <CardDescription>
-              We process visa applications and work permits for successful
-              candidates, simplifying the process of legally working abroad.
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="text-red-800 text-xl flex-grow">
-            <p>
-              We provide comprehensive support to successful candidates by
-              guiding them through visa applications and work permit processes,
-              ensuring a smooth transition to legally working abroad.
-            </p>
-          </CardContent>
-        </Card>
-
-        {/* Relocation & Settlement Support */}
-        <Card className="h-full flex flex-col">
-          <CardHeader>
-            <CardTitle>Relocation & Settlement Support</CardTitle>
-            <CardDescription>
-              From travel arrangements to accommodation, we assist professionals
-              in settling into their new work environment overseas.
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="text-red-800 text-xl flex-grow">
-            <p>
-              We go beyond job placement by providing end-to-end support for
-              professionals relocating abroad. From booking flights and securing
-              visas to arranging accommodation, we ensure a smooth transition.
-            </p>
-          </CardContent>
-        </Card>
-
+        {services.map((service, index) => (
+          <ServiceCard
+            key={index}
+            title={service.title}
+            description={service.description}
+            details={service.details}
+          />
+        ))}
       </div>
     </>
   );

@@ -81,7 +81,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center mt-4">
           <div className="flex space-x-4">
             <a
-              href="https://x.com/talentfrontiers"
+              href="https://x.com/talentfrontiers?t=cYWWjFxRK7K54ZIs8LUcXw&s=08"
               className="hover:text-neutral-400"
             >
               <svg
@@ -96,7 +96,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://www.instagram.com/in/talentfrontiers"
+              href="https://www.instagram.com/talentfrontiers?igsh=bxV5OWN6bxJucmNn"
               className="hover:text-neutral-400"
             >
               <svg
@@ -109,7 +109,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="https://www.tiktok.com/in/talentfrontiers"
+              href="https://www.tiktok.com/@talentfrontiers?"
               className="hover:text-neutral-400"
             >
               <svg

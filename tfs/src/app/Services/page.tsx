@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-// Service data for dynamic rendering
+
 const services = [
   {
     title: "Global Job Placement",
@@ -39,7 +39,7 @@ const services = [
   },
 ];
 
-// Reusable Service Card Component
+
 const ServiceCard = ({ title, description, details }: { title: string; description: string; details: string }) => {
   return (
     <Card className="h-full flex flex-col bg-white shadow-xl rounded-2xl p-6">
@@ -54,18 +54,15 @@ const ServiceCard = ({ title, description, details }: { title: string; descripti
   );
 };
 
-// Main Projects Component
 function Projects() {
   return (
     <>
-      {/* Section Header */}
+     
       <div className="bg-red-900 z-10 py-12">
         <h1 className="text-2xl font-bold text-white animate-wave text-center">
           WHAT WE OFFER
         </h1>
       </div>
-
-      {/* Grid Layout for Cards */}
       <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
         {services.map((service, index) => (
           <ServiceCard

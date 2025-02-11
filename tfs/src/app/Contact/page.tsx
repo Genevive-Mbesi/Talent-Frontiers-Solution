@@ -45,7 +45,7 @@ export default function ContactForm() {
           priority
           className="z-[-1]"
         />
-      <div className="bg-white text-red-800 p-6 rounded-lg shadow-lg w-full max-w-md">
+      <div className="bg-white  p-6 rounded-lg shadow-lg w-full max-w-md">
         <h2 className="text-xl font-bold mb-4 text-center">Contact Us</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input

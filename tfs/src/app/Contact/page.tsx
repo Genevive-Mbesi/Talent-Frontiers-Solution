@@ -1,4 +1,6 @@
 "use client";
+import Image from "next/image";
+import cover from "@/app/components/Images/type.jpg";
 
 import { useState } from "react";
 
@@ -33,7 +35,16 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen h-[auto] relative w-full overflow-hidden">
+        <Image
+          src={cover}
+          alt="Cover image"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+          priority
+          className="z-[-1]"
+        />
       <div className="bg-white text-red-800 p-6 rounded-lg shadow-lg w-full max-w-md">
         <h2 className="text-xl font-bold mb-4 text-center">Contact Us</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -43,7 +54,7 @@ export default function ContactForm() {
             placeholder="Your Name"
             value={formData.name}
             onChange={handleChange}
-            className="border border-red-500 p-2 w-full rounded"
+            className="border border-red-800 p-2 w-full rounded"
             required
           />
           <input
@@ -52,7 +63,7 @@ export default function ContactForm() {
             placeholder="Your Email"
             value={formData.email}
             onChange={handleChange}
-            className="border border-red-500 p-2 w-full rounded"
+            className="border border-red-800 p-2 w-full rounded"
             required
           />
           <textarea
@@ -60,7 +71,7 @@ export default function ContactForm() {
             placeholder="Your Message"
             value={formData.message}
             onChange={handleChange}
-            className="border border-red-500 p-2 w-full rounded"
+            className="border border-red-800 p-2 w-full rounded"
             required
           />
           <button type="submit" className="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-600 w-full">

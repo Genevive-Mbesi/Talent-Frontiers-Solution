@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import cover from "@/app/components/Images/cover.jpg";
 import Services from "@/app/Services/page"
-
+import About from '@/app/About/page'
 export default function Home() {
   return (
     <div className="relative min-h-screen w-full">
@@ -26,6 +26,7 @@ export default function Home() {
         />
       </div>
       <Services/>
+      <About/>
     </div>
   );
 }

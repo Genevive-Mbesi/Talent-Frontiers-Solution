@@ -5,7 +5,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-red-900 text-gray-300 py-8">
+    <footer className="bg-red-900 text-gray-50 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -29,17 +29,17 @@ export default function Footer() {
             </h2>
             <ul>
               <li className="mb-2">
-                <Link href="/" className="hover:text-neutral-400">
+                <Link href="/" >
                   Home
                 </Link>
               </li>
               <li className="mb-2">
-                <Link href="/Services" className="hover:text-neutral-400">
+                <Link href="/Services" >
                   Services
                 </Link>
               </li>
               <li className="mb-2">
-                <Link href="/Careers" className="hover:text-neutral-400">
+                <Link href="/Careers">
                   Careers
                 </Link>
               </li>
@@ -52,7 +52,7 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <a href="mailto:talentsolutions.tfs@gmail.com">
-                  <AiOutlineMail className="text-2xl hover:text-neutral-400 " />
+                  <AiOutlineMail className="text-2xl " />
                 </a>
                 <span>Mail</span>
               </div>
@@ -62,12 +62,12 @@ export default function Footer() {
                   target="_blank"
                   rel="noreferrer "
                 >
-                  <AiOutlineWhatsApp className="text-2xl hover:text-neutral-400" />
+                  <AiOutlineWhatsApp className="text-2xl " />
                 </a>
                 <span>Contact</span>
               </div>
               <div className="flex items-center space-x-3">
-                <FaMapMarkerAlt className="text-2xl hover:text-neutral-400" />
+                <FaMapMarkerAlt className="text-2xl" />
                 <span>1st Floor, Magharibi Place, Mai Mahiu Rd,Nairobi, Kenya</span>
               </div>
             </div>

@@ -62,6 +62,7 @@ const Navbar: React.FC = () => {
             >
               LOCATION
             </Link>
+            
           </div>
 
           {/* Mobile Menu Button */}

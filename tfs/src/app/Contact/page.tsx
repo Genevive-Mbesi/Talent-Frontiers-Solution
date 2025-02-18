@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import cover from "@/app/components/Images/type.jpg";
-
 import { useState } from "react";
+import AnimatedText from "@/components/Animation"
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -46,7 +46,8 @@ export default function ContactForm() {
           className="z-[-1]"
         />
       <div className="bg-white  p-6 rounded-lg shadow-lg w-full max-w-md">
-        <h2 className="text-xl font-bold mb-4 text-center">Contact Us</h2>
+        <h2 className="text-xl font-bold mb-4 text-center">
+          <AnimatedText text= 'Contact Us'/></h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
             type="text"

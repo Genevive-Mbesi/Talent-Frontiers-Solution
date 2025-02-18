@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-
+import AnimatedText from "@/components/Animation"
 
 const services = [
   {
@@ -60,7 +60,7 @@ function Projects() {
      
       <div className="bg-red-900 z-10 py-12">
         <h1 className="text-2xl font-bold text-white animate-wave text-center">
-          WHAT WE OFFER
+         <AnimatedText text=' WHAT WE OFFER'/>
         </h1>
       </div>
       <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -6,6 +6,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import AnimatedText from "@/components/Animation"
+
 
 const jobs = [
   {
@@ -75,7 +77,7 @@ export default function Careers() {
     <>
       <div className="bg-red-900 z-10 py-12">
         <h1 className="text-2xl font-bold text-white text-center">
-          CAREER OPPORTUNITIES
+         <AnimatedText text='CAREER OPPORTUNITIES'/>
         </h1>
       </div>
       <div className="p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

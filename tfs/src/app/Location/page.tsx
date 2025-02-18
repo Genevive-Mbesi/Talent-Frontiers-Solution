@@ -1,4 +1,5 @@
 import React from "react";
+import AnimatedText from "@/components/Animation"
 
 function Location() {
   return (
@@ -6,7 +7,7 @@ function Location() {
       {/* Header Section */}
       <div className="bg-red-900 z-10 py-12">
         <h1 className="text-2xl font-bold text-white text-center">
-          OUR LOCATION
+        <AnimatedText text='OUR LOCATION'/>
         </h1>
       </div>
 
@@ -14,7 +15,8 @@ function Location() {
       <div className="min-h-screen flex flex-col items-center justify-center p-8">
         <div className="max-w-4xl w-full bg-white shadow-lg rounded-2xl overflow-hidden">
           <div className="p-6">
-            <h2 className="text-2xl font-bold text-gray-900">Visit Us</h2>
+            <h2 className="text-2xl font-bold text-gray-900">
+              <AnimatedText text='Visit Us'/></h2>
             <p className="text-gray-600 mt-2">
               Find us at our office and get in touch with our team. We are
               happy to assist you!

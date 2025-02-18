@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
+import AnimatedText from "@/components/Animation"
 import wood from "@/app/components/Images/wood.jpg";
 import warehouse from "@/app/components/Images/warehouse.jpg";
 import electrician from "@/app/components/Images/electrician.jpg";
@@ -11,7 +11,7 @@ const About: React.FC = () => {
     <div>
     <div className="bg-red-900 z-10 py-12">
         <h1 className="text-2xl font-bold text-white animate-wave text-center">
-          WHY CHOOSE US
+        <AnimatedText text='WHY CHOOSE US'/>
         </h1>
       </div>
 

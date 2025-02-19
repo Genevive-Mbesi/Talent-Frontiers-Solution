@@ -7,6 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import AnimatedText from "@/components/Animation"
+import Slide from "@/components/Slide"
 
 const services = [
   {
@@ -42,6 +43,7 @@ const services = [
 
 const ServiceCard = ({ title, description, details }: { title: string; description: string; details: string }) => {
   return (
+    <Slide>
     <Card className="h-full flex flex-col bg-white shadow-xl rounded-2xl p-6">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
@@ -51,6 +53,7 @@ const ServiceCard = ({ title, description, details }: { title: string; descripti
         <p>{details}</p>
       </CardContent>
     </Card>
+    </Slide>
   );
 };
 

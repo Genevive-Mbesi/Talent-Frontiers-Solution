@@ -7,6 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import AnimatedText from "@/components/Animation"
+import Slide from "@/components/Slide"
 
 
 const jobs = [
@@ -80,6 +81,7 @@ export default function Careers() {
          <AnimatedText text='CAREER OPPORTUNITIES'/>
         </h1>
       </div>
+      <Slide>
       <div className="p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {jobs.map((job, index) => (
           <Card key={index}>
@@ -99,6 +101,7 @@ export default function Careers() {
           </Card>
         ))}
       </div>
+      </Slide> 
     </>
   );
 }

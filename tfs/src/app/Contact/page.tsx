@@ -3,6 +3,7 @@ import Image from "next/image";
 import cover from "@/app/components/Images/type.jpg";
 import { useState } from "react";
 import AnimatedText from "@/components/Animation"
+import Slide from "@/components/Slide"
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -45,6 +46,7 @@ export default function ContactForm() {
           priority
           className="z-[-1]"
         />
+  <Slide>
       <div className="bg-white  p-6 rounded-lg shadow-lg w-full max-w-md">
         <h2 className="text-xl font-bold mb-4 text-center">
           <AnimatedText text= 'Contact Us'/></h2>
@@ -81,6 +83,8 @@ export default function ContactForm() {
         </form>
         {status && <p className="mt-4 text-sm text-center">{status}</p>}
       </div>
+      </Slide>
     </div>
+    
   );
 }

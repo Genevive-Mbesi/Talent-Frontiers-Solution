@@ -3,11 +3,13 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Logo from "@/app/components/Images/tfslogo.png";
 import Image from "next/image";
+import Slide from "@/components/Slide"
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
+<Slide>
     <nav className="bg-white text-red-700 border-b pt-11 border-gray-200 h-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -132,6 +134,7 @@ const Navbar: React.FC = () => {
         </div>
       )}
     </nav>
+    </Slide>
   );
 };
 

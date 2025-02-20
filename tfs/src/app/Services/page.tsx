@@ -38,6 +38,20 @@ const services = [
     details:
       "We provide end-to-end relocation assistance, including flight bookings, visas, and housing arrangements, for a seamless transition.",
   },
+  {
+    title: "Fair & Transparent commission rates",
+    description:
+      "Our commitment to transparency extends to our fees.",
+    details:
+      "We provide a detailed breakdown of agency fees,covering recruitment,briefings,background checks,professional indemnity,airport transfers and clearance.",
+  },
+  {
+    title: "Efficient Turnaround Time",
+    description:
+      "Efficiency matters to us. We streamline our processes to deliver swift and reliable timelines for travel",
+    details:
+      "We are committed to ensuring fast and effective turnaround times by ensuring continuous vetting in order to maintain a ready database.",
+  },
 ];
 
 

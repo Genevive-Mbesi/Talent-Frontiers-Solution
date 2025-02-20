@@ -6,6 +6,7 @@ import About from "@/app/About/page";
 import AnimatedText from "@/components/Animation";
 import Slide from "@/components/Slide";
 
+
 export default function Home() {
   return (
     <div className="relative w-full">
@@ -31,6 +32,7 @@ export default function Home() {
       <Slide>
         <About />
       </Slide>
+
     </div>
   );
 }

@@ -44,7 +44,7 @@ const services = [
 const ServiceCard = ({ title, description, details }: { title: string; description: string; details: string }) => {
   return (
     <Slide>
-    <Card className="h-full flex flex-col bg-white shadow-xl rounded-2xl p-6">
+    <Card className="h-full flex flex-col hover:bg-gray-50 bg-white shadow-xl rounded-2xl p-6">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription className="text-red-800">{description}</CardDescription>

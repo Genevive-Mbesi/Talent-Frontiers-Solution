@@ -3,8 +3,6 @@ import React from "react";
 import AnimatedText from "@/components/Animation";
 import wood from "@/app/components/Images/welder.png";
 import warehouse from "@/app/components/Images/cleaner.png";
-import electrician from "@/app/components/Images/truck.png";
-import waitress from "@/app/components/Images/warehouse.jpg";
 import Slide from "@/components/Slide";
 import recruitment from "@/app/components/Images/recruitment.png";
 import balance from "@/app/components/Images/balance.png";

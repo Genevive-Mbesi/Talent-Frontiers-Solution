@@ -20,27 +20,25 @@ const About: React.FC = () => {
           <AnimatedText text="WHY CHOOSE US" />
         </h1>
       </div>
-      <div className=" py-12 text-center">
+
+      <div className="py-12 text-center px-4">
         <h1 className="text-3xl font-bold text-gray-900 tracking-wide">
-          <AnimatedText text="Our unique approach and commitment to excellence make us the preferred partner
-          in bridging local talent with global opportunities." />
+          <AnimatedText text="Our unique approach and commitment to excellence make us the preferred partner in bridging local talent with global opportunities." />
         </h1>
       </div>
 
       {/* Images Section */}
       <div className="max-w-7xl mx-auto px-6 py-12">
         <Slide>
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[wood, warehouse, waitress, electrician].map((img, index) => (
-              <div
-                key={index}
-                className="relative w-full h-56 rounded-lg overflow-hidden shadow-lg"
-              >
+              <div key={index} className="relative w-full h-auto rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src={img}
                   alt={`Image ${index + 1}`}
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto object-cover rounded-lg"
                 />
               </div>
             ))}
@@ -48,24 +46,27 @@ const About: React.FC = () => {
         </Slide>
       </div>
 
+      {/* Information Section */}
       <div className="max-w-7xl mx-auto px-6 pb-16">
-  <Slide>
-    <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
-      {[
-        { img: ethics, text: "We maintain transparency in all dealings with workers and employers." },
-        { img: recruitment, text: "Our comprehensive process includes job postings, filtering, interviewing, documentation verification, background checks, and medical tests." },
-        { img: balance, text: "We prioritize workers' rights and well-being and maintain open communication channels." },
-        { img: auction, text: "We adhere to both Kenya and destination country legal and ethical standards." }
-      ].map(({ img, text }, index) => (
-        <div key={index} className="flex flex-col items-center justify-center p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all h-48">
-          <Image src={img} alt="Icon" width={50} height={50} className="mb-4" />
-          <span className="text-xl text-gray-800 text-center">{text}</span>
-        </div>
-      ))}
-    </div>
-  </Slide>
-</div>
-
+        <Slide>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {[
+              { img: ethics, text: "We maintain transparency in all dealings with workers and employers." },
+              { img: recruitment, text: "Our comprehensive process includes job postings, filtering, interviewing, documentation verification, background checks, and medical tests." },
+              { img: balance, text: "We prioritize workers' rights and well-being and maintain open communication channels." },
+              { img: auction, text: "We adhere to both Kenya and destination country legal and ethical standards." }
+            ].map(({ img, text }, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center justify-center p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all text-center h-auto"
+              >
+                <Image src={img} alt="Icon" width={60} height={60} className="mb-4" />
+                <span className="text-lg text-gray-800">{text}</span>
+              </div>
+            ))}
+          </div>
+        </Slide>
+      </div>
     </div>
   );
 };

@@ -20,6 +20,12 @@ const About: React.FC = () => {
           <AnimatedText text="WHY CHOOSE US" />
         </h1>
       </div>
+      <div className=" py-12 text-center">
+        <h1 className="text-3xl font-bold text-gray-900 tracking-wide">
+          <AnimatedText text="Our unique approach and commitment to excellence make us the preferred partner
+          in bridging local talent with global opportunities." />
+        </h1>
+      </div>
 
       {/* Images Section */}
       <div className="max-w-7xl mx-auto px-6 py-12">

@@ -43,7 +43,7 @@ const services = [
     description:
       "Our commitment to transparency extends to our fees.",
     details:
-      "We provide a detailed breakdown of agency fees,covering recruitment,briefings,background checks,professional indemnity,airport transfers and clearance.",
+      "We provide a detailed breakdown of agency fees,covering recruitment,briefings,background checks, Medical examinations, professional indemnity,airport transfers and clearance.",
   },
   {
     title: "Efficient Turnaround Time",

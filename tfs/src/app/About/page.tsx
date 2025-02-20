@@ -31,7 +31,7 @@ const About: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 py-12">
         <Slide>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {[wood, warehouse, waitress, electrician].map((img, index) => (
+            {[wood, warehouse, ].map((img, index) => (
               <div key={index} className="relative w-full h-auto rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src={img}

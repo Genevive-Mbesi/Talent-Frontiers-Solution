@@ -8,6 +8,7 @@ import recruitment from "@/app/components/Images/recruitment.png";
 import balance from "@/app/components/Images/balance.png";
 import auction from "@/app/components/Images/auction.png";
 import ethics from "@/app/components/Images/business-ethics.png";
+import network from '@/app/components/Images/network.png'
 
 const About: React.FC = () => {
   return (
@@ -52,7 +53,8 @@ const About: React.FC = () => {
               { img: ethics, text: "We maintain transparency in all dealings with workers and employers." },
               { img: recruitment, text: "Our comprehensive process includes job postings, filtering, interviewing, documentation verification, background checks, and medical tests." },
               { img: balance, text: "We prioritize workers' rights and well-being and maintain open communication channels." },
-              { img: auction, text: "We adhere to both Kenya and destination country legal and ethical standards." }
+              { img: auction, text: "We adhere to both Kenya and destination country legal and ethical standards." },
+              { img: network, text: "We stay updated with changing regulations which is made possible via our strong Government and industry Connections." }
             ].map(({ img, text }, index) => (
               <div
                 key={index}

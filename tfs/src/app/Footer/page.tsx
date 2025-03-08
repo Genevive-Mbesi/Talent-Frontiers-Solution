@@ -54,14 +54,14 @@ export default function Footer() {
             <h2 className="text-xl font-semibold text-white mb-4">Contact</h2>
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
-                <a href="mailto:talentsolutions.tfs@gmail.com">
+                <a href="mailto:gennymbesi@gmail.com">
                   <AiOutlineMail className="text-2xl " />
                 </a>
                 <span>Mail</span>
               </div>
               <div className="flex items-center space-x-3">
                 <a
-                  href="https://wa.me/+254722516292"
+                  href="https://wa.me/+254740528336"
                   target="_blank"
                   rel="noreferrer "
                 >
@@ -71,7 +71,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <FaMapMarkerAlt className="text-2xl" />
-                <span>1st Floor, Magharibi Place, Mai Mahiu Rd,Nairobi, Kenya</span>
+                <span>Nairobi, Kenya</span>
               </div>
             </div>
           </div>
